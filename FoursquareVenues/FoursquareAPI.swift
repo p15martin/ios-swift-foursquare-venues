@@ -10,7 +10,7 @@ import Foundation
 import corelocation
 
 protocol FoursquareAPIProtocol {
-    func didRecieveSchools(results: School[])
+    func didRecieveVenues(results: Venue[])
 }
 
 class FoursquareAPI: NSObject {
@@ -25,7 +25,7 @@ class FoursquareAPI: NSObject {
     var data: NSMutableData = NSMutableData()
     var delegate: FoursquareAPIProtocol?
     
-    func searchForSchoolsAtLocation(userLocation: CLLocation) {
+    func searchForCofeeShopsAtLocation(userLocation: CLLocation) {
         var urlPath = "https://api.foursquare.com/v2/venues/search?ll=\(userLocation.coordinate.latitude),\(userLocation.coordinate.longitude)&categoryId=\(categoryId)&radius=\(radiusInMeters)&client_id=\(clientId)&client_secret=\(clientSecret)&v=\(version)"
         var url: NSURL = NSURL(string: urlPath)
         var request: NSURLRequest = NSURLRequest(URL: url)
@@ -35,7 +35,7 @@ class FoursquareAPI: NSObject {
             var strData = NSString(data: data, encoding: NSUTF8StringEncoding)
             var err: NSError?
             var json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableLeaves, error: &err) as NSDictionary
-            var schools: School[] = []
+            var venues: Venue[] = []
             
             if(err) {
                 println(err!.localizedDescription)
@@ -46,17 +46,16 @@ class FoursquareAPI: NSObject {
                     let allVenues: NSDictionary[] = response["venues"] as NSDictionary[]
 
                     for venue:NSDictionary in allVenues {
-                        var schoolName:String = venue["name"] as String
+                        var venueName:String = venue["name"] as String
                         
                         var location:NSDictionary = venue["location"] as NSDictionary
-                        var schoolLocation:CLLocation = CLLocation(latitude: location["lat"] as Double, longitude: location["lng"] as Double)
+                        var venueLocation:CLLocation = CLLocation(latitude: location["lat"] as Double, longitude: location["lng"] as Double)
                         
-                        var school = School(name: schoolName, location: schoolLocation, distanceFromUser: schoolLocation.distanceFromLocation(userLocation))
-                        schools.append(school)
+                        venues.append(Venue(name: venueName, location: venueLocation, distanceFromUser: venueLocation.distanceFromLocation(userLocation)))
                     }
                 }
                 
-                self.delegate?.didRecieveSchools(schools)
+                self.delegate?.didRecieveVenues(venues)
             }
         })
         

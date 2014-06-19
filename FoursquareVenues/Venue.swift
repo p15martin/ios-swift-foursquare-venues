@@ -1,5 +1,5 @@
 //
-//  School.swift
+//  Venue
 //  FoursquareVenues
 //
 //  Created by XD on 6/13/14.
@@ -9,7 +9,7 @@
 import UIKit
 import corelocation
 
-class School: NSObject {
+class Venue: NSObject {
    
     var name = ""
     var location:CLLocation? = nil

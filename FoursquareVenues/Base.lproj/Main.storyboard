@@ -4,14 +4,15 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
     </dependencies>
     <scenes>
-        <!--School List Table View Controller - Coffee Shops-->
+        <!--Venues List Table View Controller - Coffee Shops-->
         <scene sceneID="xhv-kJ-ZOz">
             <objects>
-                <tableViewController id="VS0-xq-NRt" customClass="SchoolListTableViewController" customModule="FoursquareVenues" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="VS0-xq-NRt" customClass="VenuesListTableViewController" customModule="FoursquareVenues" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="i3z-UG-0IA">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListPrototypeCell" textLabel="oVa-3u-tHw" style="IBUITableViewCellStyleDefault" id="XXE-Yr-H4O">
                                 <autoresizingMask key="autoresizingMask"/>

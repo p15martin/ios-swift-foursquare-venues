@@ -1,5 +1,5 @@
 //
-//  SchoolListTableViewController.swift
+//  VenuesListTableViewController.swift
 //  FoursquareVenues
 //
 //  Created by XD on 6/13/14.
@@ -9,10 +9,10 @@
 import UIKit
 import corelocation
 
-class SchoolListTableViewController: UITableViewController, FoursquareAPIProtocol, CLLocationManagerDelegate {
+class VenuesListTableViewController: UITableViewController, FoursquareAPIProtocol, CLLocationManagerDelegate {
     
     let api: FoursquareAPI = FoursquareAPI()
-    var schools:School[] = []
+    var venues:Venue[] = []
     var locationManager:CLLocationManager!
 
     override func viewDidLoad() {
@@ -29,7 +29,7 @@ class SchoolListTableViewController: UITableViewController, FoursquareAPIProtoco
         if isLocationMeasurementNotCached(location) && isHorizontalAccuracyValidMeasurement(location) && isLocationMeasurementDesiredAccuracy(location) {
             
             stopUpdatingLocation()
-            findSchools(location)
+            findVenues(location)
         }
     }
     
@@ -71,15 +71,13 @@ class SchoolListTableViewController: UITableViewController, FoursquareAPIProtoco
         locationManager.delegate = nil
     }
     
-    func findSchools(location:CLLocation) {
+    func findVenues(location:CLLocation) {
         api.delegate = self;
-        api.searchForSchoolsAtLocation(location)
+        api.searchForCofeeShopsAtLocation(location)
     }
     
-    func didRecieveSchools(results: School[]) {
-        schools = sort(results, {$0.distanceFromUser < $1.distanceFromUser})
-        
-        println("table reload")
+    func didRecieveVenues(results: Venue[]) {
+        venues = sort(results, {$0.distanceFromUser < $1.distanceFromUser})
         
         tableView.reloadData()
     }
@@ -93,7 +91,7 @@ class SchoolListTableViewController: UITableViewController, FoursquareAPIProtoco
     }
 
     override func tableView(tableView: UITableView?, numberOfRowsInSection section: Int) -> Int {
-        return self.schools.count
+        return self.venues.count
     }
     
     override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell? {
@@ -102,9 +100,9 @@ class SchoolListTableViewController: UITableViewController, FoursquareAPIProtoco
         
         var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier(CellIndentifier) as UITableViewCell
         
-        var school: School = self.schools[indexPath.row] as School
+        var venue: Venue = self.venues[indexPath.row] as Venue
         
-        cell.textLabel.text = school.name
+        cell.textLabel.text = venue.name
         
         return cell
     }
