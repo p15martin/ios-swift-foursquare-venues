@@ -1,2 +1,1 @@
-ios-swift-foursquare-venues
-===========================
+This code is experimental. It is my first adventure in Swift. It reads the users location and then queries the Foursquare API to find all coffee shops within a 10KM radius, which are then sorted by distance (nearest to furthest).
