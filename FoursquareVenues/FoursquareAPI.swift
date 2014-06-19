@@ -20,7 +20,7 @@ class FoursquareAPI: NSObject {
     let version = "20140613"
     
     let radiusInMeters = 10000
-    let categoryId = "4bf58dd8d48988d13d941735,4f4533814b9074f6e4fb0106"
+    let categoryId = "4bf58dd8d48988d1e0931735"
     
     var data: NSMutableData = NSMutableData()
     var delegate: FoursquareAPIProtocol?

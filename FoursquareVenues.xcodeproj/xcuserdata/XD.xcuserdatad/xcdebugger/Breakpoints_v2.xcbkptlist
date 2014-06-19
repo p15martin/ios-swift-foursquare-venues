@@ -91,8 +91,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "68"
             endingLineNumber = "68"
-            landmarkName = "searchForSchoolsAtLocation(_:)"
-            landmarkType = "5">
+            landmarkName = "FoursquareAPI"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
