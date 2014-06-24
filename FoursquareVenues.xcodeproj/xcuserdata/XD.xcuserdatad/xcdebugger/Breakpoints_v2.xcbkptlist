@@ -13,66 +13,6 @@
             timestampString = "424845361.576892"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "searchForCofeeShopsAtLocation(_:)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FoursquareVenues.FoursquareAPI.searchForSchools (FoursquareVenues.FoursquareAPI)(Swift.Double, long : Swift.Double) -&gt; ()"
-                  moduleName = "FoursquareVenues"
-                  urlString = "file:///Users/XD/Documents/Git/FoursquareVenues/FoursquareVenues/FoursquareAPI.swift"
-                  timestampString = "424827085.691209"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "2603">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FoursquareVenues.FoursquareAPI.(searchForSchools (FoursquareVenues.FoursquareAPI) -&gt; (Swift.Double, long : Swift.Double) -&gt; ()).(closure #1)"
-                  moduleName = "FoursquareVenues"
-                  urlString = "file:///Users/XD/Documents/Git/FoursquareVenues/FoursquareVenues/FoursquareAPI.swift"
-                  timestampString = "424827085.69139"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "36">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "reabstraction thunk helper from @callee_owned (@owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSData&gt;, @owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSURLResponse&gt;, @owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSError&gt;) -&gt; (@unowned ()) to @callee_owned (@in (Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSData&gt;, Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSURLResponse&gt;, Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSError&gt;)) -&gt; (@out ())"
-                  moduleName = "FoursquareVenues"
-                  urlString = "file:///Users/XD/Documents/Git/FoursquareVenues/FoursquareVenues/FoursquareAPI.swift"
-                  timestampString = "424827085.691661"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "18">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FoursquareVenues/FoursquareAPI.swift"
-            timestampString = "424845361.576892"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
             endingLineNumber = "33"
             landmarkName = "searchForCofeeShopsAtLocation(_:)"
@@ -86,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FoursquareVenues/FoursquareAPI.swift"
-            timestampString = "424910742.941039"
+            timestampString = "425337986.579256"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "FoursquareAPI"
             landmarkType = "3">
          </BreakpointContent>
@@ -102,27 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FoursquareVenues/FoursquareAPI.swift"
-            timestampString = "424845361.576892"
+            timestampString = "425337986.579256"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "searchForCofeeShopsAtLocation(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FoursquareVenues/FoursquareAPI.swift"
-            timestampString = "424845361.576892"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "searchForCofeeShopsAtLocation(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -134,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FoursquareVenues/VenuesListTableViewController.swift"
-            timestampString = "424844383.323945"
+            timestampString = "425338283.088943"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "didRecieveVenues(_:)"
             landmarkType = "5">
             <Locations>
@@ -196,11 +120,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FoursquareVenues/FoursquareAPI.swift"
-            timestampString = "424895295.636056"
+            timestampString = "425337986.579256"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "searchForCofeeShopsAtLocation(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -212,43 +136,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FoursquareVenues/VenuesListTableViewController.swift"
-            timestampString = "424895490.6274"
+            timestampString = "425338283.088943"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "locationManager(_:didUpdateLocations:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FoursquareVenues/VenuesListTableViewController.swift"
-            timestampString = "424895494.994943"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FoursquareVenues/VenuesListTableViewController.swift"
-            timestampString = "424895498.912487"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "locationManager(_:didUpdateLocations:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -260,11 +152,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FoursquareVenues/VenuesListTableViewController.swift"
-            timestampString = "424895500.688232"
+            timestampString = "425338283.088943"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FoursquareVenues/VenuesListTableViewController.swift"
+            timestampString = "425338283.088943"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "locationManager(_:didFailWithError:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -276,43 +184,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FoursquareVenues/FoursquareAPI.swift"
-            timestampString = "424910742.941039"
+            timestampString = "425337986.579256"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "searchForCofeeShopsAtLocation(_:)"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FoursquareVenues.FoursquareAPI.searchForCofeeShopsAtLocation (FoursquareVenues.FoursquareAPI)(ObjectiveC.CLLocation) -&gt; ()"
-                  moduleName = "FoursquareVenues"
-                  urlString = "file:///Users/XD/Documents/Git/ios-swift-foursquare-venues/FoursquareVenues/FoursquareAPI.swift"
-                  timestampString = "424911024.0321"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "4678">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FoursquareVenues.FoursquareAPI.searchForCofeeShopsAtLocation (FoursquareVenues.FoursquareAPI)(ObjectiveC.CLLocation) -&gt; ()"
-                  moduleName = "FoursquareVenues"
-                  urlString = "file:///Users/XD/Documents/Git/ios-swift-foursquare-venues/FoursquareVenues/FoursquareAPI.swift"
-                  timestampString = "424911024.032362"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "4722">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -322,11 +200,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FoursquareVenues/VenuesListTableViewController.swift"
-            timestampString = "424910742.941039"
+            timestampString = "425338283.088943"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -338,11 +216,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FoursquareVenues/FoursquareAPI.swift"
-            timestampString = "424895630.137495"
+            timestampString = "425337986.579256"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "searchForCofeeShopsAtLocation(_:)"
             landmarkType = "5">
             <Locations>
@@ -384,11 +262,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FoursquareVenues/FoursquareAPI.swift"
-            timestampString = "424895632.823838"
+            timestampString = "425337986.579256"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "searchForCofeeShopsAtLocation(_:)"
             landmarkType = "5">
             <Locations>
@@ -430,11 +308,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FoursquareVenues/VenuesListTableViewController.swift"
-            timestampString = "424910742.941039"
+            timestampString = "425338283.088943"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "didRecieveVenues(_:)"
             landmarkType = "5">
          </BreakpointContent>

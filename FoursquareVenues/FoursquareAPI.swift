@@ -22,25 +22,26 @@ class FoursquareAPI: NSObject {
     let radiusInMeters = 10000
     let categoryId = "4bf58dd8d48988d1e0931735"
     
-    var data: NSMutableData = NSMutableData()
+    let data = NSMutableData()
     var delegate: FoursquareAPIProtocol?
     
     func searchForCofeeShopsAtLocation(userLocation: CLLocation) {
-        var urlPath = "https://api.foursquare.com/v2/venues/search?ll=\(userLocation.coordinate.latitude),\(userLocation.coordinate.longitude)&categoryId=\(categoryId)&radius=\(radiusInMeters)&client_id=\(clientId)&client_secret=\(clientSecret)&v=\(version)"
-        var url: NSURL = NSURL(string: urlPath)
-        var request: NSURLRequest = NSURLRequest(URL: url)
+        let urlPath = "https://api.foursquare.com/v2/venues/search?ll=\(userLocation.coordinate.latitude),\(userLocation.coordinate.longitude)&categoryId=\(categoryId)&radius=\(radiusInMeters)&client_id=\(clientId)&client_secret=\(clientSecret)&v=\(version)"
+        let url = NSURL(string: urlPath)
+        let request = NSURLRequest(URL: url)
         
-        var session: NSURLSession = NSURLSession.sharedSession()
-        var task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
-            var strData = NSString(data: data, encoding: NSUTF8StringEncoding)
+        let session: NSURLSession = NSURLSession.sharedSession()
+        let task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
             var err: NSError?
-            var json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableLeaves, error: &err) as NSDictionary
-            var venues: Venue[] = []
+            let strData = NSString(data: data, encoding: NSUTF8StringEncoding)
+            let json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableLeaves, error: &err) as NSDictionary
             
             if(err) {
                 println(err!.localizedDescription)
             }
             else {
+                var venues = Venue[]()
+                
                 if json.count>0 {
                     let response: NSDictionary = json["response"] as NSDictionary
                     let allVenues: NSDictionary[] = response["venues"] as NSDictionary[]

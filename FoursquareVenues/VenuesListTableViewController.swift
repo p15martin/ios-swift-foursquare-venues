@@ -11,20 +11,19 @@ import corelocation
 
 class VenuesListTableViewController: UITableViewController, FoursquareAPIProtocol, CLLocationManagerDelegate {
     
-    let api: FoursquareAPI = FoursquareAPI()
-    var venues:Venue[] = []
-    var locationManager:CLLocationManager!
+    let api = FoursquareAPI()
+    let locationManager = CLLocationManager()
+    
+    var venues = Venue[]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        locationManager = CLLocationManager()
         
         startUpdatingLocation()
     }
     
     func locationManager(manager:CLLocationManager!, didUpdateLocations locations:AnyObject[]!) {
-        let location:CLLocation = getLatestMeasurementFromLocations(locations)
+        let location = getLatestMeasurementFromLocations(locations)
         
         if isLocationMeasurementNotCached(location) && isHorizontalAccuracyValidMeasurement(location) && isLocationMeasurementDesiredAccuracy(location) {
             
@@ -96,11 +95,9 @@ class VenuesListTableViewController: UITableViewController, FoursquareAPIProtoco
     
     override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell? {
         
-        let CellIndentifier: NSString = "ListPrototypeCell"
-        
-        var cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier(CellIndentifier) as UITableViewCell
-        
-        var venue: Venue = self.venues[indexPath.row] as Venue
+        let CellIndentifier = "ListPrototypeCell"
+        let cell = tableView.dequeueReusableCellWithIdentifier(CellIndentifier) as UITableViewCell
+        let venue = self.venues[indexPath.row] as Venue
         
         cell.textLabel.text = venue.name
         
