@@ -11,9 +11,9 @@ import corelocation
 
 class Venue: NSObject {
    
-    var name = ""
-    var location:CLLocation? = nil
-    var distanceFromUser:CLLocationDistance? = nil
+    let name:String!
+    let location:CLLocation!
+    let distanceFromUser:CLLocationDistance!
     
     init(name: String, location: CLLocation, distanceFromUser: Double) {
         self.name = name
